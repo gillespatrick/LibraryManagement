@@ -1,6 +1,8 @@
 package lib.entities;
 
-public class User {
+import lib.inter.Iconnect;
+
+public class User implements Iconnect{
 	
 	String firstName, lastName, email, password;
 	int phone;
@@ -74,6 +76,24 @@ public class User {
 
 	public void setPhone(int phone) {
 		this.phone = phone;
+	}
+
+
+	/**
+	 * Here we implement the interface methods: Login and Logout
+	 */
+	@Override
+	public boolean login() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+
+	@Override
+	public String logout() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
